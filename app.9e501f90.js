@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({3:[function(require,module,exports) {
+})({5:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * Vue.js v2.5.16
@@ -9974,7 +9974,7 @@ function getOuterHTML(el) {
 Vue.compile = compileToFunctions;
 
 module.exports = Vue;
-},{}],18:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -10004,7 +10004,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],9:[function(require,module,exports) {
+},{}],13:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -10035,7 +10035,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":18}],10:[function(require,module,exports) {
+},{"./bundle-url":22}],14:[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -10277,7 +10277,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],6:[function(require,module,exports) {
+},{}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10378,7 +10378,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":9,"vue-hot-reload-api":10,"vue":3}],5:[function(require,module,exports) {
+},{"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],8:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10442,7 +10442,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":9,"vue-hot-reload-api":10,"vue":3}],7:[function(require,module,exports) {
+},{"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],9:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10541,7 +10541,154 @@ render._withStripped = true
       
       }
     })();
-},{"./Icon":5,"_css_loader":9,"vue-hot-reload-api":10,"vue":3}],17:[function(require,module,exports) {
+},{"./Icon":8,"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],10:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    props: {
+        'span': {
+            type: [Number, String]
+        },
+        'offset': {
+            type: [Number, String]
+        }
+    }
+};
+      var $81b028 = exports.default || module.exports;
+      if (typeof $81b028 === 'function') {
+        $81b028 = $81b028.options;
+      }
+    
+        /* template */
+        Object.assign($81b028, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "col",
+      class: [
+        _vm.span && "col-" + _vm.span,
+        _vm.offset && "offset-" + _vm.offset
+      ]
+    },
+    [
+      _c(
+        "div",
+        { staticStyle: { border: "1px solid black" } },
+        [_vm._t("default")],
+        2
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-81b028",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$81b028', $81b028);
+          } else {
+            api.reload('$81b028', $81b028);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],11:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+
+exports.default = {};
+      var $73361a = exports.default || module.exports;
+      if (typeof $73361a === 'function') {
+        $73361a = $73361a.options;
+      }
+    
+        /* template */
+        Object.assign($73361a, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row" }, [_vm._t("default")], 2)
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$73361a', $73361a);
+          } else {
+            api.reload('$73361a', $73361a);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],21:[function(require,module,exports) {
 /*!
  * assertion-error
  * Copyright(c) 2013 Jake Luer <jake@qualiancy.com>
@@ -10659,7 +10806,7 @@ AssertionError.prototype.toJSON = function (stack) {
   return props;
 };
 
-},{}],42:[function(require,module,exports) {
+},{}],45:[function(require,module,exports) {
 'use strict';
 
 /* !
@@ -10952,7 +11099,7 @@ module.exports = {
   setPathValue: setPathValue,
 };
 
-},{}],26:[function(require,module,exports) {
+},{}],30:[function(require,module,exports) {
 /*!
  * Chai - flag utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -10986,7 +11133,7 @@ module.exports = function flag(obj, key, value) {
     return flags[key];
   }
 };
-},{}],20:[function(require,module,exports) {
+},{}],24:[function(require,module,exports) {
 /*!
  * Chai - test utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11015,7 +11162,7 @@ module.exports = function test(obj, args) {
       expr = args[0];
   return negate ? !expr : expr;
 };
-},{"./flag":26}],41:[function(require,module,exports) {
+},{"./flag":30}],46:[function(require,module,exports) {
 var global = (1,eval)("this");
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -11395,7 +11542,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   return typeDetect;
 });
-},{}],21:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 /*!
  * Chai - expectTypes utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11447,7 +11594,7 @@ module.exports = function expectTypes(obj, types) {
     throw new AssertionError(flagMsg + 'object tested must be ' + str + ', but ' + objType + ' given', undefined, ssfi);
   }
 };
-},{"assertion-error":17,"./flag":26,"type-detect":41}],23:[function(require,module,exports) {
+},{"assertion-error":21,"./flag":30,"type-detect":46}],27:[function(require,module,exports) {
 /*!
  * Chai - getActual utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11468,7 +11615,7 @@ module.exports = function expectTypes(obj, types) {
 module.exports = function getActual(obj, args) {
   return args.length > 4 ? args[4] : obj._obj;
 };
-},{}],43:[function(require,module,exports) {
+},{}],47:[function(require,module,exports) {
 'use strict';
 
 /* !
@@ -11514,7 +11661,7 @@ function getFuncName(aFunc) {
 
 module.exports = getFuncName;
 
-},{}],46:[function(require,module,exports) {
+},{}],50:[function(require,module,exports) {
 /*!
  * Chai - getProperties utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11551,7 +11698,7 @@ module.exports = function getProperties(object) {
 
   return result;
 };
-},{}],47:[function(require,module,exports) {
+},{}],51:[function(require,module,exports) {
 /*!
  * Chai - getEnumerableProperties utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11578,7 +11725,7 @@ module.exports = function getEnumerableProperties(object) {
   }
   return result;
 };
-},{}],11:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 module.exports = {
 
   /**
@@ -11673,7 +11820,7 @@ module.exports = {
 
   proxyExcludedKeys: ['then', 'inspect', 'toJSON']
 };
-},{}],24:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 // This is (almost) directly from Node.js utils
@@ -12037,7 +12184,7 @@ function isError(e) {
 function objectToString(o) {
   return Object.prototype.toString.call(o);
 }
-},{"get-func-name":43,"./getProperties":46,"./getEnumerableProperties":47,"../config":11}],25:[function(require,module,exports) {
+},{"get-func-name":47,"./getProperties":50,"./getEnumerableProperties":51,"../config":15}],29:[function(require,module,exports) {
 /*!
  * Chai - flag utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12084,7 +12231,7 @@ module.exports = function objDisplay(obj) {
     return str;
   }
 };
-},{"./inspect":24,"../config":11}],22:[function(require,module,exports) {
+},{"./inspect":28,"../config":15}],26:[function(require,module,exports) {
 /*!
  * Chai - message composition utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12139,7 +12286,7 @@ module.exports = function getMessage(obj, args) {
 
   return flagMsg ? flagMsg + ': ' + msg : msg;
 };
-},{"./flag":26,"./getActual":23,"./inspect":24,"./objDisplay":25}],27:[function(require,module,exports) {
+},{"./flag":30,"./getActual":27,"./inspect":28,"./objDisplay":29}],31:[function(require,module,exports) {
 /*!
  * Chai - transferFlags utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12184,7 +12331,7 @@ module.exports = function transferFlags(assertion, object, includeAll) {
     }
   }
 };
-},{}],45:[function(require,module,exports) {
+},{}],49:[function(require,module,exports) {
 'use strict';
 /* globals Symbol: false, Uint8Array: false, WeakMap: false */
 /*!
@@ -12635,7 +12782,7 @@ function objectEqual(leftHandOperand, rightHandOperand, options) {
 function isPrimitive(value) {
   return value === null || (typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object';
 }
-},{"type-detect":41}],39:[function(require,module,exports) {
+},{"type-detect":46}],43:[function(require,module,exports) {
 var config = require('../config');
 
 /*!
@@ -12658,7 +12805,7 @@ var config = require('../config');
 module.exports = function isProxyEnabled() {
   return config.useProxy && typeof Proxy !== 'undefined' && typeof Reflect !== 'undefined';
 };
-},{"../config":11}],29:[function(require,module,exports) {
+},{"../config":15}],32:[function(require,module,exports) {
 /*!
  * Chai - addProperty utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12729,7 +12876,7 @@ module.exports = function addProperty(ctx, name, getter) {
     configurable: true
   });
 };
-},{"../../chai":8,"./flag":26,"./isProxyEnabled":39,"./transferFlags":27}],38:[function(require,module,exports) {
+},{"../../chai":12,"./flag":30,"./isProxyEnabled":43,"./transferFlags":31}],42:[function(require,module,exports) {
 var config = require('../config');
 
 var fnLengthDesc = Object.getOwnPropertyDescriptor(function () {}, 'length');
@@ -12789,7 +12936,7 @@ module.exports = function addLengthGuard(fn, assertionName, isChainable) {
 
   return fn;
 };
-},{"../config":11}],37:[function(require,module,exports) {
+},{"../config":15}],41:[function(require,module,exports) {
 var config = require('../config');
 var flag = require('./flag');
 var getProperties = require('./getProperties');
@@ -12903,7 +13050,7 @@ function stringDistance(strA, strB, memo) {
 
   return memo[strA.length][strB.length];
 }
-},{"../config":11,"./flag":26,"./getProperties":46,"./isProxyEnabled":39}],28:[function(require,module,exports) {
+},{"../config":15,"./flag":30,"./getProperties":50,"./isProxyEnabled":43}],33:[function(require,module,exports) {
 /*!
  * Chai - addMethod utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12971,7 +13118,7 @@ module.exports = function addMethod(ctx, name, method) {
   addLengthGuard(methodWrapper, name, false);
   ctx[name] = proxify(methodWrapper, name);
 };
-},{"./addLengthGuard":38,"../../chai":8,"./flag":26,"./proxify":37,"./transferFlags":27}],30:[function(require,module,exports) {
+},{"./addLengthGuard":42,"../../chai":12,"./flag":30,"./proxify":41,"./transferFlags":31}],34:[function(require,module,exports) {
 /*!
  * Chai - overwriteProperty utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -13062,7 +13209,7 @@ module.exports = function overwriteProperty(ctx, name, getter) {
     configurable: true
   });
 };
-},{"../../chai":8,"./flag":26,"./isProxyEnabled":39,"./transferFlags":27}],31:[function(require,module,exports) {
+},{"../../chai":12,"./flag":30,"./isProxyEnabled":43,"./transferFlags":31}],35:[function(require,module,exports) {
 /*!
  * Chai - overwriteMethod utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -13154,7 +13301,7 @@ module.exports = function overwriteMethod(ctx, name, method) {
   addLengthGuard(overwritingMethodWrapper, name, false);
   ctx[name] = proxify(overwritingMethodWrapper, name);
 };
-},{"./addLengthGuard":38,"../../chai":8,"./flag":26,"./proxify":37,"./transferFlags":27}],32:[function(require,module,exports) {
+},{"./addLengthGuard":42,"../../chai":12,"./flag":30,"./proxify":41,"./transferFlags":31}],36:[function(require,module,exports) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*!
@@ -13307,7 +13454,7 @@ module.exports = function addChainableMethod(ctx, name, method, chainingBehavior
     configurable: true
   });
 };
-},{"./addLengthGuard":38,"../../chai":8,"./flag":26,"./proxify":37,"./transferFlags":27}],33:[function(require,module,exports) {
+},{"./addLengthGuard":42,"../../chai":12,"./flag":30,"./proxify":41,"./transferFlags":31}],37:[function(require,module,exports) {
 /*!
  * Chai - overwriteChainableMethod utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -13377,7 +13524,7 @@ module.exports = function overwriteChainableMethod(ctx, name, method, chainingBe
     return newAssertion;
   };
 };
-},{"../../chai":8,"./transferFlags":27}],34:[function(require,module,exports) {
+},{"../../chai":12,"./transferFlags":31}],38:[function(require,module,exports) {
 /*!
  * Chai - compareByInspect utility
  * Copyright(c) 2011-2016 Jake Luer <jake@alogicalparadox.com>
@@ -13409,7 +13556,7 @@ var inspect = require('./inspect');
 module.exports = function compareByInspect(a, b) {
   return inspect(a) < inspect(b) ? -1 : 1;
 };
-},{"./inspect":24}],35:[function(require,module,exports) {
+},{"./inspect":28}],39:[function(require,module,exports) {
 /*!
  * Chai - getOwnEnumerablePropertySymbols utility
  * Copyright(c) 2011-2016 Jake Luer <jake@alogicalparadox.com>
@@ -13437,7 +13584,7 @@ module.exports = function getOwnEnumerablePropertySymbols(obj) {
     return Object.getOwnPropertyDescriptor(obj, sym).enumerable;
   });
 };
-},{}],36:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 /*!
  * Chai - getOwnEnumerableProperties utility
  * Copyright(c) 2011-2016 Jake Luer <jake@alogicalparadox.com>
@@ -13467,7 +13614,7 @@ var getOwnEnumerablePropertySymbols = require('./getOwnEnumerablePropertySymbols
 module.exports = function getOwnEnumerableProperties(obj) {
   return Object.keys(obj).concat(getOwnEnumerablePropertySymbols(obj));
 };
-},{"./getOwnEnumerablePropertySymbols":35}],44:[function(require,module,exports) {
+},{"./getOwnEnumerablePropertySymbols":39}],48:[function(require,module,exports) {
 'use strict';
 
 /* !
@@ -13641,7 +13788,7 @@ module.exports = {
   getConstructorName: getConstructorName,
 };
 
-},{}],40:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 /*!
  * Chai - isNaN utility
  * Copyright(c) 2012-2015 Sakthipriyan Vairamani <thechargingvolcano@gmail.com>
@@ -13668,7 +13815,7 @@ function isNaN(value) {
 
 // If ECMAScript 6's Number.isNaN is present, prefer that.
 module.exports = Number.isNaN || isNaN;
-},{}],19:[function(require,module,exports) {
+},{}],23:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011 Jake Luer <jake@alogicalparadox.com>
@@ -13841,7 +13988,7 @@ exports.isProxyEnabled = require('./isProxyEnabled');
  */
 
 exports.isNaN = require('./isNaN');
-},{"pathval":42,"./test":20,"type-detect":41,"./expectTypes":21,"./getMessage":22,"./getActual":23,"./inspect":24,"./objDisplay":25,"./flag":26,"./transferFlags":27,"deep-eql":45,"get-func-name":43,"./addProperty":29,"./addMethod":28,"./overwriteProperty":30,"./overwriteMethod":31,"./addChainableMethod":32,"./overwriteChainableMethod":33,"./compareByInspect":34,"./getOwnEnumerablePropertySymbols":35,"./getOwnEnumerableProperties":36,"check-error":44,"./proxify":37,"./addLengthGuard":38,"./isProxyEnabled":39,"./isNaN":40}],12:[function(require,module,exports) {
+},{"pathval":45,"./test":24,"type-detect":46,"./expectTypes":25,"./getMessage":26,"./getActual":27,"./inspect":28,"./objDisplay":29,"./flag":30,"./transferFlags":31,"deep-eql":49,"get-func-name":47,"./addProperty":32,"./addMethod":33,"./overwriteProperty":34,"./overwriteMethod":35,"./addChainableMethod":36,"./overwriteChainableMethod":37,"./compareByInspect":38,"./getOwnEnumerablePropertySymbols":39,"./getOwnEnumerableProperties":40,"check-error":48,"./proxify":41,"./addLengthGuard":42,"./isProxyEnabled":43,"./isNaN":44}],16:[function(require,module,exports) {
 /*!
  * chai
  * http://chaijs.com
@@ -14006,7 +14153,7 @@ module.exports = function (_chai, util) {
     }
   });
 };
-},{"./config":11}],13:[function(require,module,exports) {
+},{"./config":15}],17:[function(require,module,exports) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*!
@@ -17448,7 +17595,7 @@ module.exports = function (chai, _) {
     this.assert(typeof obj === "number" && isFinite(obj), 'expected #{this} to be a finite number', 'expected #{this} to not be a finite number');
   });
 };
-},{}],14:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
@@ -17483,7 +17630,7 @@ module.exports = function (chai, util) {
     }, chai.expect.fail);
   };
 };
-},{}],15:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
@@ -17685,7 +17832,7 @@ module.exports = function (chai, util) {
   chai.should = loadShould;
   chai.Should = loadShould;
 };
-},{}],16:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
@@ -20684,7 +20831,7 @@ module.exports = function (chai, util) {
     return alias;
   })('isOk', 'ok')('isNotOk', 'notOk')('throws', 'throw')('throws', 'Throw')('isExtensible', 'extensible')('isNotExtensible', 'notExtensible')('isSealed', 'sealed')('isNotSealed', 'notSealed')('isFrozen', 'frozen')('isNotFrozen', 'notFrozen')('isEmpty', 'empty')('isNotEmpty', 'notEmpty');
 };
-},{}],8:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
@@ -20777,9 +20924,9 @@ exports.use(should);
 
 var assert = require('./chai/interface/assert');
 exports.use(assert);
-},{"assertion-error":17,"./chai/utils":19,"./chai/config":11,"./chai/assertion":12,"./chai/core/assertions":13,"./chai/interface/expect":14,"./chai/interface/should":15,"./chai/interface/assert":16}],4:[function(require,module,exports) {
+},{"assertion-error":21,"./chai/utils":23,"./chai/config":15,"./chai/assertion":16,"./chai/core/assertions":17,"./chai/interface/expect":18,"./chai/interface/should":19,"./chai/interface/assert":20}],6:[function(require,module,exports) {
 module.exports = require('./lib/chai');
-},{"./lib/chai":8}],2:[function(require,module,exports) {
+},{"./lib/chai":12}],4:[function(require,module,exports) {
 'use strict';
 
 var _vue = require('vue');
@@ -20798,6 +20945,14 @@ var _Input = require('./Input');
 
 var _Input2 = _interopRequireDefault(_Input);
 
+var _Col = require('./Col');
+
+var _Col2 = _interopRequireDefault(_Col);
+
+var _Row = require('./Row');
+
+var _Row2 = _interopRequireDefault(_Row);
+
 var _chai = require('chai');
 
 var _chai2 = _interopRequireDefault(_chai);
@@ -20807,6 +20962,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _vue2.default.component('g-button', _Button2.default);
 _vue2.default.component('g-icon', _Icon2.default);
 _vue2.default.component('g-input', _Input2.default);
+_vue2.default.component('g-col', _Col2.default);
+_vue2.default.component('g-row', _Row2.default);
 
 new _vue2.default({
     el: '#app',
@@ -20846,7 +21003,7 @@ var expect = _chai2.default.expect;
 
     expect(order).to.eq('2');
 }
-},{"vue":3,"./Button":6,"./Icon":5,"./Input":7,"chai":4}],48:[function(require,module,exports) {
+},{"vue":5,"./Button":7,"./Icon":8,"./Input":9,"./Col":10,"./Row":11,"chai":6}],52:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -20876,7 +21033,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56289' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56934' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -21015,5 +21172,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[48,2])
+},{}]},{},[52,4])
 //# sourceMappingURL=/app.9e501f90.map
