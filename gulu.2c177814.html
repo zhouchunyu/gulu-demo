@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-padding: .5em;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --button-color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
+
+        }
+    </style>
+<link rel="stylesheet" href="/app.9e501f90.css"></head>
+<body>
+<div id="app">
+    <g-input value="张三"></g-input>
+    <g-input value="李四"></g-input>
+    <g-input value="disabled" disabled=""></g-input>
+    <g-input value="disabled" readonly=""> readonly</g-input>
+    <g-input value="很短" error="名字太短了"></g-input>
+    <br>
+    <br>
+    <div>button组件</div>
+    <g-button>无icon</g-button>
+    <g-button icon="config" icon-position="right">icon在右</g-button>
+    <g-button icon="config" icon-position="left">icon在左</g-button>
+    <g-button icon="config" :loading="loading1" @click="loading1 = !loading1" icon-position="right">loading设置</g-button>
+
+</div>
+<br>
+<br>
+<div>组件测试</div>
+<div id="test">
+</div>
+<script src="http://at.alicdn.com/t/font_766758_jnnumi26cei.js"></script>
+<script src="/app.9e501f90.js"></script>
+</body>
+</html>
