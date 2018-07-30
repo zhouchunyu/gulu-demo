@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({5:[function(require,module,exports) {
+})({3:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * Vue.js v2.5.16
@@ -9974,7 +9974,7 @@ function getOuterHTML(el) {
 Vue.compile = compileToFunctions;
 
 module.exports = Vue;
-},{}],22:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -10004,7 +10004,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],13:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -10035,7 +10035,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":22}],14:[function(require,module,exports) {
+},{"./bundle-url":20}],12:[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -10277,7 +10277,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],7:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10378,7 +10378,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],8:[function(require,module,exports) {
+},{"_css_loader":11,"vue-hot-reload-api":12,"vue":3}],6:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10442,7 +10442,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],9:[function(require,module,exports) {
+},{"_css_loader":11,"vue-hot-reload-api":12,"vue":3}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10480,6 +10480,8 @@ exports.default = {
 //
 //
 //
+//
+//
       var $894945 = exports.default || module.exports;
       if (typeof $894945 === 'function') {
         $894945 = $894945.options;
@@ -10501,11 +10503,17 @@ exports.default = {
         domProps: { value: _vm.value }
       }),
       _vm._v(" "),
-      _c("g-icon", { attrs: { name: "config" } }),
-      _vm._v(" "),
-      _c("span", { staticClass: "errorMessage" }, [_vm._v(_vm._s(_vm.error))])
+      _vm.error
+        ? [
+            _c("g-icon", { attrs: { name: "error" } }),
+            _vm._v(" "),
+            _c("span", { staticClass: "errorMessage" }, [
+              _vm._v(_vm._s(_vm.error))
+            ])
+          ]
+        : _vm._e()
     ],
-    1
+    2
   )
 }
 var staticRenderFns = []
@@ -10541,7 +10549,7 @@ render._withStripped = true
       
       }
     })();
-},{"./Icon":8,"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],10:[function(require,module,exports) {
+},{"./Icon":6,"_css_loader":11,"vue-hot-reload-api":12,"vue":3}],8:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10629,7 +10637,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],11:[function(require,module,exports) {
+},{"_css_loader":11,"vue-hot-reload-api":12,"vue":3}],9:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10688,7 +10696,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":13,"vue-hot-reload-api":14,"vue":5}],21:[function(require,module,exports) {
+},{"_css_loader":11,"vue-hot-reload-api":12,"vue":3}],19:[function(require,module,exports) {
 /*!
  * assertion-error
  * Copyright(c) 2013 Jake Luer <jake@qualiancy.com>
@@ -10806,7 +10814,7 @@ AssertionError.prototype.toJSON = function (stack) {
   return props;
 };
 
-},{}],45:[function(require,module,exports) {
+},{}],43:[function(require,module,exports) {
 'use strict';
 
 /* !
@@ -11099,7 +11107,7 @@ module.exports = {
   setPathValue: setPathValue,
 };
 
-},{}],30:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 /*!
  * Chai - flag utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11133,7 +11141,7 @@ module.exports = function flag(obj, key, value) {
     return flags[key];
   }
 };
-},{}],24:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 /*!
  * Chai - test utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11162,7 +11170,7 @@ module.exports = function test(obj, args) {
       expr = args[0];
   return negate ? !expr : expr;
 };
-},{"./flag":30}],46:[function(require,module,exports) {
+},{"./flag":28}],44:[function(require,module,exports) {
 var global = (1,eval)("this");
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -11542,7 +11550,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   return typeDetect;
 });
-},{}],25:[function(require,module,exports) {
+},{}],23:[function(require,module,exports) {
 /*!
  * Chai - expectTypes utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11594,7 +11602,7 @@ module.exports = function expectTypes(obj, types) {
     throw new AssertionError(flagMsg + 'object tested must be ' + str + ', but ' + objType + ' given', undefined, ssfi);
   }
 };
-},{"assertion-error":21,"./flag":30,"type-detect":46}],27:[function(require,module,exports) {
+},{"assertion-error":19,"./flag":28,"type-detect":44}],25:[function(require,module,exports) {
 /*!
  * Chai - getActual utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11615,7 +11623,7 @@ module.exports = function expectTypes(obj, types) {
 module.exports = function getActual(obj, args) {
   return args.length > 4 ? args[4] : obj._obj;
 };
-},{}],47:[function(require,module,exports) {
+},{}],45:[function(require,module,exports) {
 'use strict';
 
 /* !
@@ -11661,7 +11669,7 @@ function getFuncName(aFunc) {
 
 module.exports = getFuncName;
 
-},{}],50:[function(require,module,exports) {
+},{}],49:[function(require,module,exports) {
 /*!
  * Chai - getProperties utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11698,7 +11706,7 @@ module.exports = function getProperties(object) {
 
   return result;
 };
-},{}],51:[function(require,module,exports) {
+},{}],48:[function(require,module,exports) {
 /*!
  * Chai - getEnumerableProperties utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11725,7 +11733,7 @@ module.exports = function getEnumerableProperties(object) {
   }
   return result;
 };
-},{}],15:[function(require,module,exports) {
+},{}],13:[function(require,module,exports) {
 module.exports = {
 
   /**
@@ -11820,7 +11828,7 @@ module.exports = {
 
   proxyExcludedKeys: ['then', 'inspect', 'toJSON']
 };
-},{}],28:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 // This is (almost) directly from Node.js utils
@@ -12184,7 +12192,7 @@ function isError(e) {
 function objectToString(o) {
   return Object.prototype.toString.call(o);
 }
-},{"get-func-name":47,"./getProperties":50,"./getEnumerableProperties":51,"../config":15}],29:[function(require,module,exports) {
+},{"get-func-name":45,"./getProperties":49,"./getEnumerableProperties":48,"../config":13}],27:[function(require,module,exports) {
 /*!
  * Chai - flag utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12231,7 +12239,7 @@ module.exports = function objDisplay(obj) {
     return str;
   }
 };
-},{"./inspect":28,"../config":15}],26:[function(require,module,exports) {
+},{"./inspect":26,"../config":13}],24:[function(require,module,exports) {
 /*!
  * Chai - message composition utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12286,7 +12294,7 @@ module.exports = function getMessage(obj, args) {
 
   return flagMsg ? flagMsg + ': ' + msg : msg;
 };
-},{"./flag":30,"./getActual":27,"./inspect":28,"./objDisplay":29}],31:[function(require,module,exports) {
+},{"./flag":28,"./getActual":25,"./inspect":26,"./objDisplay":27}],29:[function(require,module,exports) {
 /*!
  * Chai - transferFlags utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12331,7 +12339,7 @@ module.exports = function transferFlags(assertion, object, includeAll) {
     }
   }
 };
-},{}],49:[function(require,module,exports) {
+},{}],47:[function(require,module,exports) {
 'use strict';
 /* globals Symbol: false, Uint8Array: false, WeakMap: false */
 /*!
@@ -12782,7 +12790,7 @@ function objectEqual(leftHandOperand, rightHandOperand, options) {
 function isPrimitive(value) {
   return value === null || (typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object';
 }
-},{"type-detect":46}],43:[function(require,module,exports) {
+},{"type-detect":44}],41:[function(require,module,exports) {
 var config = require('../config');
 
 /*!
@@ -12805,7 +12813,7 @@ var config = require('../config');
 module.exports = function isProxyEnabled() {
   return config.useProxy && typeof Proxy !== 'undefined' && typeof Reflect !== 'undefined';
 };
-},{"../config":15}],32:[function(require,module,exports) {
+},{"../config":13}],30:[function(require,module,exports) {
 /*!
  * Chai - addProperty utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12876,7 +12884,7 @@ module.exports = function addProperty(ctx, name, getter) {
     configurable: true
   });
 };
-},{"../../chai":12,"./flag":30,"./isProxyEnabled":43,"./transferFlags":31}],42:[function(require,module,exports) {
+},{"../../chai":10,"./flag":28,"./isProxyEnabled":41,"./transferFlags":29}],40:[function(require,module,exports) {
 var config = require('../config');
 
 var fnLengthDesc = Object.getOwnPropertyDescriptor(function () {}, 'length');
@@ -12936,7 +12944,7 @@ module.exports = function addLengthGuard(fn, assertionName, isChainable) {
 
   return fn;
 };
-},{"../config":15}],41:[function(require,module,exports) {
+},{"../config":13}],39:[function(require,module,exports) {
 var config = require('../config');
 var flag = require('./flag');
 var getProperties = require('./getProperties');
@@ -13050,7 +13058,7 @@ function stringDistance(strA, strB, memo) {
 
   return memo[strA.length][strB.length];
 }
-},{"../config":15,"./flag":30,"./getProperties":50,"./isProxyEnabled":43}],33:[function(require,module,exports) {
+},{"../config":13,"./flag":28,"./getProperties":49,"./isProxyEnabled":41}],31:[function(require,module,exports) {
 /*!
  * Chai - addMethod utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -13118,7 +13126,7 @@ module.exports = function addMethod(ctx, name, method) {
   addLengthGuard(methodWrapper, name, false);
   ctx[name] = proxify(methodWrapper, name);
 };
-},{"./addLengthGuard":42,"../../chai":12,"./flag":30,"./proxify":41,"./transferFlags":31}],34:[function(require,module,exports) {
+},{"./addLengthGuard":40,"../../chai":10,"./flag":28,"./proxify":39,"./transferFlags":29}],32:[function(require,module,exports) {
 /*!
  * Chai - overwriteProperty utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -13209,7 +13217,7 @@ module.exports = function overwriteProperty(ctx, name, getter) {
     configurable: true
   });
 };
-},{"../../chai":12,"./flag":30,"./isProxyEnabled":43,"./transferFlags":31}],35:[function(require,module,exports) {
+},{"../../chai":10,"./flag":28,"./isProxyEnabled":41,"./transferFlags":29}],33:[function(require,module,exports) {
 /*!
  * Chai - overwriteMethod utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -13301,7 +13309,7 @@ module.exports = function overwriteMethod(ctx, name, method) {
   addLengthGuard(overwritingMethodWrapper, name, false);
   ctx[name] = proxify(overwritingMethodWrapper, name);
 };
-},{"./addLengthGuard":42,"../../chai":12,"./flag":30,"./proxify":41,"./transferFlags":31}],36:[function(require,module,exports) {
+},{"./addLengthGuard":40,"../../chai":10,"./flag":28,"./proxify":39,"./transferFlags":29}],34:[function(require,module,exports) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*!
@@ -13454,7 +13462,7 @@ module.exports = function addChainableMethod(ctx, name, method, chainingBehavior
     configurable: true
   });
 };
-},{"./addLengthGuard":42,"../../chai":12,"./flag":30,"./proxify":41,"./transferFlags":31}],37:[function(require,module,exports) {
+},{"./addLengthGuard":40,"../../chai":10,"./flag":28,"./proxify":39,"./transferFlags":29}],35:[function(require,module,exports) {
 /*!
  * Chai - overwriteChainableMethod utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -13524,7 +13532,7 @@ module.exports = function overwriteChainableMethod(ctx, name, method, chainingBe
     return newAssertion;
   };
 };
-},{"../../chai":12,"./transferFlags":31}],38:[function(require,module,exports) {
+},{"../../chai":10,"./transferFlags":29}],36:[function(require,module,exports) {
 /*!
  * Chai - compareByInspect utility
  * Copyright(c) 2011-2016 Jake Luer <jake@alogicalparadox.com>
@@ -13556,7 +13564,7 @@ var inspect = require('./inspect');
 module.exports = function compareByInspect(a, b) {
   return inspect(a) < inspect(b) ? -1 : 1;
 };
-},{"./inspect":28}],39:[function(require,module,exports) {
+},{"./inspect":26}],37:[function(require,module,exports) {
 /*!
  * Chai - getOwnEnumerablePropertySymbols utility
  * Copyright(c) 2011-2016 Jake Luer <jake@alogicalparadox.com>
@@ -13584,7 +13592,7 @@ module.exports = function getOwnEnumerablePropertySymbols(obj) {
     return Object.getOwnPropertyDescriptor(obj, sym).enumerable;
   });
 };
-},{}],40:[function(require,module,exports) {
+},{}],38:[function(require,module,exports) {
 /*!
  * Chai - getOwnEnumerableProperties utility
  * Copyright(c) 2011-2016 Jake Luer <jake@alogicalparadox.com>
@@ -13614,7 +13622,7 @@ var getOwnEnumerablePropertySymbols = require('./getOwnEnumerablePropertySymbols
 module.exports = function getOwnEnumerableProperties(obj) {
   return Object.keys(obj).concat(getOwnEnumerablePropertySymbols(obj));
 };
-},{"./getOwnEnumerablePropertySymbols":39}],48:[function(require,module,exports) {
+},{"./getOwnEnumerablePropertySymbols":37}],46:[function(require,module,exports) {
 'use strict';
 
 /* !
@@ -13788,7 +13796,7 @@ module.exports = {
   getConstructorName: getConstructorName,
 };
 
-},{}],44:[function(require,module,exports) {
+},{}],42:[function(require,module,exports) {
 /*!
  * Chai - isNaN utility
  * Copyright(c) 2012-2015 Sakthipriyan Vairamani <thechargingvolcano@gmail.com>
@@ -13815,7 +13823,7 @@ function isNaN(value) {
 
 // If ECMAScript 6's Number.isNaN is present, prefer that.
 module.exports = Number.isNaN || isNaN;
-},{}],23:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011 Jake Luer <jake@alogicalparadox.com>
@@ -13988,7 +13996,7 @@ exports.isProxyEnabled = require('./isProxyEnabled');
  */
 
 exports.isNaN = require('./isNaN');
-},{"pathval":45,"./test":24,"type-detect":46,"./expectTypes":25,"./getMessage":26,"./getActual":27,"./inspect":28,"./objDisplay":29,"./flag":30,"./transferFlags":31,"deep-eql":49,"get-func-name":47,"./addProperty":32,"./addMethod":33,"./overwriteProperty":34,"./overwriteMethod":35,"./addChainableMethod":36,"./overwriteChainableMethod":37,"./compareByInspect":38,"./getOwnEnumerablePropertySymbols":39,"./getOwnEnumerableProperties":40,"check-error":48,"./proxify":41,"./addLengthGuard":42,"./isProxyEnabled":43,"./isNaN":44}],16:[function(require,module,exports) {
+},{"pathval":43,"./test":22,"type-detect":44,"./expectTypes":23,"./getMessage":24,"./getActual":25,"./inspect":26,"./objDisplay":27,"./flag":28,"./transferFlags":29,"deep-eql":47,"get-func-name":45,"./addProperty":30,"./addMethod":31,"./overwriteProperty":32,"./overwriteMethod":33,"./addChainableMethod":34,"./overwriteChainableMethod":35,"./compareByInspect":36,"./getOwnEnumerablePropertySymbols":37,"./getOwnEnumerableProperties":38,"check-error":46,"./proxify":39,"./addLengthGuard":40,"./isProxyEnabled":41,"./isNaN":42}],14:[function(require,module,exports) {
 /*!
  * chai
  * http://chaijs.com
@@ -14153,7 +14161,7 @@ module.exports = function (_chai, util) {
     }
   });
 };
-},{"./config":15}],17:[function(require,module,exports) {
+},{"./config":13}],15:[function(require,module,exports) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*!
@@ -17595,7 +17603,7 @@ module.exports = function (chai, _) {
     this.assert(typeof obj === "number" && isFinite(obj), 'expected #{this} to be a finite number', 'expected #{this} to not be a finite number');
   });
 };
-},{}],18:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
@@ -17630,7 +17638,7 @@ module.exports = function (chai, util) {
     }, chai.expect.fail);
   };
 };
-},{}],19:[function(require,module,exports) {
+},{}],17:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
@@ -17832,7 +17840,7 @@ module.exports = function (chai, util) {
   chai.should = loadShould;
   chai.Should = loadShould;
 };
-},{}],20:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
@@ -20831,7 +20839,7 @@ module.exports = function (chai, util) {
     return alias;
   })('isOk', 'ok')('isNotOk', 'notOk')('throws', 'throw')('throws', 'Throw')('isExtensible', 'extensible')('isNotExtensible', 'notExtensible')('isSealed', 'sealed')('isNotSealed', 'notSealed')('isFrozen', 'frozen')('isNotFrozen', 'notFrozen')('isEmpty', 'empty')('isNotEmpty', 'notEmpty');
 };
-},{}],12:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 /*!
  * chai
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
@@ -20924,9 +20932,9 @@ exports.use(should);
 
 var assert = require('./chai/interface/assert');
 exports.use(assert);
-},{"assertion-error":21,"./chai/utils":23,"./chai/config":15,"./chai/assertion":16,"./chai/core/assertions":17,"./chai/interface/expect":18,"./chai/interface/should":19,"./chai/interface/assert":20}],6:[function(require,module,exports) {
+},{"assertion-error":19,"./chai/utils":21,"./chai/config":13,"./chai/assertion":14,"./chai/core/assertions":15,"./chai/interface/expect":16,"./chai/interface/should":17,"./chai/interface/assert":18}],4:[function(require,module,exports) {
 module.exports = require('./lib/chai');
-},{"./lib/chai":12}],4:[function(require,module,exports) {
+},{"./lib/chai":10}],2:[function(require,module,exports) {
 'use strict';
 
 var _vue = require('vue');
@@ -21003,7 +21011,7 @@ var expect = _chai2.default.expect;
 
     expect(order).to.eq('2');
 }
-},{"vue":5,"./Button":7,"./Icon":8,"./Input":9,"./Col":10,"./Row":11,"chai":6}],52:[function(require,module,exports) {
+},{"vue":3,"./Button":5,"./Icon":6,"./Input":7,"./Col":8,"./Row":9,"chai":4}],50:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -21033,7 +21041,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56934' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58632' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -21172,5 +21180,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[52,4])
+},{}]},{},[50,2])
 //# sourceMappingURL=/app.9e501f90.map
