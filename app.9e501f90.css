@@ -83,6 +83,7 @@
   border: 1px solid red;
   width: 50%;
   padding: 0 10px;
+  box-sizing: border-box;
 }
 .col-1[data-v-81b028] {
   width: 4.16667%;

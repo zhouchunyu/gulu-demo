@@ -10505,7 +10505,7 @@ exports.default = {
       _vm._v(" "),
       _vm.error
         ? [
-            _c("g-icon", { attrs: { name: "error" } }),
+            _c("Icon", { attrs: { name: "error" } }),
             _vm._v(" "),
             _c("span", { staticClass: "errorMessage" }, [
               _vm._v(_vm._s(_vm.error))
@@ -10597,7 +10597,7 @@ exports.default = {
     [
       _c(
         "div",
-        { staticStyle: { border: "1px solid black" } },
+        { staticStyle: { border: "1px solid red" } },
         [_vm._t("default")],
         2
       )
@@ -11669,7 +11669,7 @@ function getFuncName(aFunc) {
 
 module.exports = getFuncName;
 
-},{}],49:[function(require,module,exports) {
+},{}],48:[function(require,module,exports) {
 /*!
  * Chai - getProperties utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -11706,7 +11706,7 @@ module.exports = function getProperties(object) {
 
   return result;
 };
-},{}],48:[function(require,module,exports) {
+},{}],49:[function(require,module,exports) {
 /*!
  * Chai - getEnumerableProperties utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -12192,7 +12192,7 @@ function isError(e) {
 function objectToString(o) {
   return Object.prototype.toString.call(o);
 }
-},{"get-func-name":45,"./getProperties":49,"./getEnumerableProperties":48,"../config":13}],27:[function(require,module,exports) {
+},{"get-func-name":45,"./getProperties":48,"./getEnumerableProperties":49,"../config":13}],27:[function(require,module,exports) {
 /*!
  * Chai - flag utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -13058,7 +13058,7 @@ function stringDistance(strA, strB, memo) {
 
   return memo[strA.length][strB.length];
 }
-},{"../config":13,"./flag":28,"./getProperties":49,"./isProxyEnabled":41}],31:[function(require,module,exports) {
+},{"../config":13,"./flag":28,"./getProperties":48,"./isProxyEnabled":41}],31:[function(require,module,exports) {
 /*!
  * Chai - addMethod utility
  * Copyright(c) 2012-2014 Jake Luer <jake@alogicalparadox.com>
@@ -21041,7 +21041,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58632' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50440' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
